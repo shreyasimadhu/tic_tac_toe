@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tic Tac Toe</title>
+  	<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body onload="init();">
+	<center>
+		<br/>
+		<h1 style="margin:0 0 0 0; font-family:r1; font-size: 40px; color:white;">
+			<span style="text-shadow:1px 1px 10px rgb(4, 0, 255);">Create</span><span> By </span><span style="text-shadow:1px 1px 10px rgb(43, 255, 0);">Shereyase</span> <span style="text-shadow:1px 1px 10px gold;">Madhu</span><br><br>
+			<span style="text-shadow:1px 1px 10px rgb(255, 0, 221);">Tic </span> <span style="text-shadow:1px 1px 10px #eeff00;">Tac</span> 
+			<span style="text-shadow:1px 1px 10px #ff0000;">Toe</span> <br>
+		</h1>
+		<br/>
+		<div id="homeP">
+			<button id="zone" onclick="showOne()"><img src="./shreyasi/single.png"><br>Single Player Game<br/>.</button>
+	  		<br/>
+	  		<br/>
+	  		<button id="ztwo" onclick="showTwo()"><img src="./shreyasi/double.png"/><br>Multi Player Game<br/>.</button>
+	  		<br/>
+		</div>
+		<div id="grid">
+			<canvas id = "canvas1"  width="60" height="60" style="border:3px groove black" onclick="ticTac(0,0)"></canvas>
+			<canvas id = "canvas2"  width="60" height="60" style="border:3px groove black" onclick="ticTac(0,1)"></canvas>
+			<canvas id = "canvas3"  width="60" height="60" style="border:3px groove black" onclick="ticTac(0,2)"></canvas><br/>
+			<canvas id = "canvas4"  width="60" height="60" style="border:3px groove black" onclick="ticTac(1,0)"></canvas>
+			<canvas id = "canvas5"  width="60" height="60" style="border:3px groove black" onclick="ticTac(1,1)"></canvas>
+			<canvas id = "canvas6"  width="60" height="60" style="border:3px groove black" onclick="ticTac(1,2)"></canvas><br />
+			<canvas id = "canvas7"  width="60" height="60" style="border:3px groove black" onclick="ticTac(2,0)"></canvas>
+			<canvas id = "canvas8"  width="60" height="60" style="border:3px groove black" onclick="ticTac(2,1)"></canvas>
+			<canvas id = "canvas9"  width="60" height="60" style="border:3px groove black" onclick="ticTac(2,2)"></canvas>
+			<table>
+				<tr>
+					<td></td>
+					<td>
+						<center>
+							<p id="p2"></p>
+							<input type="submit" value="Restart Game" onclick="init();" style="width:200px; height:50px"/>
+							<input type="submit" value="Home" onclick="location.reload();" style="width:200px; height:50px"/>
+						</center>
+					</td>
+				</tr>
+			</table>
+			<img src="./shreyasi/o.png" style="visibility:hidden" id="i1" />
+			<img src="./shreyasi/x.png" style="visibility:hidden" id="i2" />
+		</div>
+	</center>
+	<script src="main.js"></script>
+</body>
+</html>
+
+
+
